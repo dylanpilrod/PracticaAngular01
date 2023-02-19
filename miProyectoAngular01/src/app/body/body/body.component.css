@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scroll-snap-align: start;
+}
+
+#contenedor{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 80vh;
+}
+
+.one{
+    margin: 10px;
+    padding: 20px;
+    background-image: url(https://media2.orlandoweekly.com/orlando/imager/u/magnum/32157976/the-week-bad-bunny-photo-by-jd-casto.jpg?cb=1659482597);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+} .second{
+    padding: 20px;
+    margin: 10px;
+    background-image: url(https://cdnmain-website.latina.pe/wp-content/uploads/2022/12/22161438/feid-concierto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+} .three{
+    padding: 20px;
+    margin: 10px;
+    background-image: url(https://imagenes.heraldo.es/files/image_990_v3/uploads/imagenes/2019/10/10/anuel-incendia-la-noche-de-valdespartera.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+table{
+    border: solid red 3px;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+p{
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.658);
+    border: solid red 3px;
+}

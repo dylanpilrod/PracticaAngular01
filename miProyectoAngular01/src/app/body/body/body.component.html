@@ -1,0 +1,79 @@
+<div id="contenedor">
+    <section class="one">
+        <p class="nombreArtista">{{tablaBadBunny}}</p>
+        &nbsp;
+        <table id="badbunny">
+            <br>
+            <thead>
+                <tr>
+                    <th class="text text-center">Pais</th>
+                    <th class="text text-center">Edad&nbsp;</th>
+                    <th class="text text-center">Albumes</th>
+                    <th class="text text-center">&nbsp;Reproducciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cantante of cantantes; let i = index">
+                    <ng-container *ngIf="i === 0">
+                        <td class="text text-center">{{ cantante.pais }}&nbsp;</td>
+                        <td class="text text-center">{{ cantante.edad }}</td>
+                        <td class="text text-center">{{ cantante.albumes }}</td>
+                        <td class="text text-center">&nbsp;{{ cantante.reproducciones }}</td>
+                    </ng-container>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </section>
+    <section class="second">
+        <p class="nombreArtista">{{tablaFeid}}</p>
+        &nbsp;
+        <table id="feid">
+            <br>
+            <thead>
+                <tr>
+                    <th class="text text-center">Pais</th>
+                    <th class="text text-center">Edad&nbsp;</th>
+                    <th class="text text-center">Albumes</th>
+                    <th class="text text-center">&nbsp;Reproducciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td class="text text-center">{{ cantantes[1].pais }}&nbsp;</td>
+                    <td class="text text-center">{{ cantantes[1].edad }}</td>
+                    <td class="text text-center">{{ cantantes[1].albumes }}</td>
+                    <td class="text text-center">&nbsp;{{ cantantes[1].reproducciones }}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="three">
+        <p class="nombreArtista">{{tablaAnuel}}</p>
+        &nbsp;
+        <table id="anuel">
+            <br>
+            <thead>
+                <tr>
+                    <th class="text text-center">Pais</th>
+                    <th class="text text-center">Edad&nbsp;</th>
+                    <th class="text text-center">Albumes</th>
+                    <th class="text text-center">&nbsp;Reproducciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td class="text text-center">{{ cantantes[2].pais }}&nbsp;</td>
+                    <td class="text text-center">{{ cantantes[2].edad }}</td>
+                    <td class="text text-center">{{ cantantes[2].albumes }}</td>
+                    <td class="text text-center">&nbsp;{{ cantantes[2].reproducciones }}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</div>

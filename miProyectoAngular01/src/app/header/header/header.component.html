@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="row menu">
+    <div class="col-4 col-md-4 col-xl-4 si">
+      
+      <button class="btnArtist"
+      (click)="cambiaColor('#e5989b')"
+      (click)="cambiaImagen('https://m.media-amazon.com/images/I/91vkwlCj4mL._SL1500_.jpg')"
+      (click)="aplicarTexto('UN VERANO SIN TI')"
+      >BADBUNNY</button><br>
+      
+    </div>
+    <div class="col-4 col-md-4 col-xl-4 si">
+      <button class="btnArtist"
+      (click)="cambiaColor('green')"
+      (click)="cambiaImagen('https://i.scdn.co/image/ab67616d0000b273171b67f2647cf7fda88bbe35')"
+      (click)="aplicarTexto('FELIZ CUMPLEAÑOS FERXXO')"
+      >FEID</button><br>
+      
+    </div>
+    <div class="col-4 col-md-4 col-xl-4 si">
+      
+        <button class="btnArtist"
+      (click)="cambiaColor('black')"
+      (click)="cambiaImagen('https://www.lahiguera.net/musicalia/artistas/anuel_aa/disco/12467/anuel_aa_las_leyendas_nunca_mueren_2-portada.jpg')"
+      (click)="aplicarTexto('LAS LEYENDAS NUNCA MUEREN')"
+      >ANUEL</button><br>
+      
+    </div>
+  </div>
+  </div>
+  
+  <div class="dropdown-container" [ngStyle]="estilo">
+      <p class="album">{{ texto }}</p>
+  <img class="imgArtista" *ngIf="imagen" [src]="imagen" alt="Imagen">
+</div>
